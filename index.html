@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cottontail Cage Run</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-wrap">
+    <h1>🐇 Cottontail Cage Run</h1>
+    <div id="hud">
+      <span id="hud-level">Level 1 / 4</span>
+      <span id="hud-carrots">🥕 x 0</span>
+      <span id="hud-lives">Lives: ❤️❤️❤️</span>
+    </div>
+    <div id="canvas-frame">
+      <canvas id="game" width="800" height="450"></canvas>
+      <div id="overlay">
+        <div id="overlay-box">
+          <h2 id="overlay-title">Cottontail Cage Run</h2>
+          <p id="overlay-text">Guide the rabbit through every corner of the cage!<br>
+          Collect carrots, dodge the sharp bits, and reach the exit door on each level.</p>
+          <div id="overlay-controls">
+            <b>Controls:</b> ← → or A/D to run, Space / ↑ / W to jump, P to pause, R to restart level
+          </div>
+          <button id="overlay-btn">Start Game</button>
+        </div>
+      </div>
+    </div>
+    <p id="footer-note">A little rabbit, a big cage, four levels of running and hopping.</p>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
