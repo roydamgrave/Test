@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #3a2b23, #17100c 70%);
+  font-family: "Segoe UI", Verdana, sans-serif;
+  color: #f5e9d8;
+}
+
+#game-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+h1 {
+  margin: 4px 0 10px;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+#hud {
+  width: 800px;
+  max-width: 96vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 14px;
+  margin-bottom: 8px;
+  background: #241812;
+  border: 2px solid #6b4b31;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+#canvas-frame {
+  position: relative;
+  border: 10px solid #7a5230;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 0 20px rgba(0,0,0,0.4);
+  background: #d8c39a;
+  max-width: 96vw;
+}
+
+canvas {
+  display: block;
+  width: 800px;
+  max-width: 96vw;
+  height: auto;
+  image-rendering: pixelated;
+  background: #cdb47f;
+  border-radius: 2px;
+}
+
+#overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 12, 8, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+#overlay.hidden {
+  display: none;
+}
+
+#overlay-box {
+  text-align: center;
+  padding: 20px 26px;
+  max-width: 480px;
+}
+
+#overlay-box h2 {
+  margin-top: 0;
+  color: #ffcf8a;
+}
+
+#overlay-controls {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  background: #000000aa;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+#overlay-btn {
+  margin-top: 18px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background: #ff9d3c;
+  color: #2b1a0e;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+#overlay-btn:hover {
+  background: #ffb765;
+  transform: translateY(-1px);
+}
+
+#footer-note {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
